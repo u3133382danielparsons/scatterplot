@@ -6,22 +6,22 @@ const HEIGHT = 300 - MARGIN.TOP - MARGIN.BOTTOM;
 
 class D3Chart {
 	constructor(element) {
-		let vis = this
+		let vis = this;
 
 		vis.g = d3.select(element)
 			.append("svg")
 				.attr("width", WIDTH + MARGIN.LEFT + MARGIN.RIGHT)
 				.attr("height", HEIGHT + MARGIN.TOP + MARGIN.BOTTOM)
 			.append("g")
-				.attr("transform", `translate(${MARGIN.LEFT}, ${MARGIN.TOP})`)
+				.attr("transform", `translate(${MARGIN.LEFT}, ${MARGIN.TOP})`);
 
-		vis.update()		
+		vis.update();		
 	}
 
 	update() {
-		let vis = this
+		let vis = this;
 	
 	}
 }
 
-export default D3Chart
+export default D3Chart;
